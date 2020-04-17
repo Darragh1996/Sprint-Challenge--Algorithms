@@ -26,3 +26,5 @@ egg_func(floor, egg_limit = 0, egg_breaks_at=0):
         else:
             egg_limit = test_floor
             egg_func(floor, egg_limit, egg_breaks_at)
+
+I think the run time complexity would be O(log n) due to the fact the number of floors the need to be checked are halfed with each loop.
