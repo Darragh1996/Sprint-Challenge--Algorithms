@@ -14,3 +14,15 @@ c) O(n), the bunnyEars function will run one time for each bunny(n) until
 n reaches 0
 
 ## Exercise II
+egg_func(floor, egg_limit = 0, egg_breaks_at=0):
+    test_floor = floor - egg_breaks_at // 2
+    drop egg from test_floor:
+        if egg breaks:
+            egg_breaks_at = test_floor
+            if egg_breaks_at == limit + 1:
+                return egg_breaks_at
+            else:
+                egg_func(test_floor, egg_limit, egg_breaks_at)
+        else:
+            egg_limit = test_floor
+            egg_func(floor, egg_limit, egg_breaks_at)
